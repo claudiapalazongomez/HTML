@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head> <!-- Aquí va la cabecera -->
+        <title>Mi primera página</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/gif" href="./Imágenes/favicon-80x80.gif">
+        <link rel="stylesheet" type="text/css" href="./estilos/estilo1.css">
+    </head>
+    <body style="background-color:rgb(247, 222, 242);"> <!-- Aquí va el cuerpo -->
+        <h1 id="Inicio">Esta es la cabecera del texto</h1> <!--debemos acostumbrarnos a tener SOLO 1 h1-->
+        <hr>
+        <h2>Esta es <br>la cabecera h2&nbsp;&nbsp;&nbsp;del texto</h2> <!--&nbsp; para forzar espacios en blanco-->
+        <hr/>
+        <h3 class="fuente">Ejemplo de selector de atributos</h3>
+        <p style="background-color: rgb(110, 107, 191)">Este es el primer párrafo <span style="font-size: 25px"><b>con palabras en negrita</b></span>, en <i>cursiva</i> y <u>subrayadas</u>, además<sup>1</sup> superíndices y también<sub>2</sub> subíndices</p>
+        <p style="color:#A55ED4">Este es el segundo párrafo</p> <!--enlace interno <a href="#"> para el típico botón en la parte inferior de una página y volver a la parte superior (x ej)-->
+        <p id="tercero">Este es el tercer párrafo para hacer pruebas de estilo</p>
+        <ol> <!--podemos ponerle el atributo type="" y modificarle como queremos ese orden reflejado (ej. nº romanos o alfabéticamente) // para empezar desde otro número distinto a 1 o letras distinta a "a" poner el atributo start="nº"-->
+            <li>Huevos</li>
+            <li>Arroz</li>
+            <li>Tomates</li>
+        </ol>
+        <ul><!--podemos ponerle el atributo type="" y que nos aparezca "square" (cuadrados en vez d puntos) y para que no nos salga nada "none"-->
+            <li>Refresco</li>
+            <li>Agua</li>
+            <li>Zumo</li>
+        </ul>
+        <hr>
+        <dl>
+            <dt>Giralda</dt>
+            <dd>Monumento de Sevilla que es el campanario de la catedral</dd>
+            <dt>Torre del Oro</dt>
+            <dd>Torre de vigilancia en el río</dd>
+        </dl>
+        <hr>
+        <ul><!--lista principal / anidamos dos listas-->
+            <li>Géneros musicales:
+                <ul><!--lista secundaria-->
+                    <li>Pop</li>
+                    <li>Techno</li>
+                    <li>Hip Hop</li>
+                </ul>
+            </li>
+            <br>
+            <li>Cantantes de Hip Hop:
+                <ul>
+                    <li>Chris Brown</li>
+                    <li>Asap Rocky</li>
+                    <li>Teyana Taylor</li>
+                </ul>
+            </li>
+        </ul>
+        <hr/>
+        <table class="borde" border="5" bordercolor="#ff0000" cellspacing = "4" cellpadding="5"><!--cellpadding puedes expandir el espacio interior de una celda y para expandir el espacio entre una celda y otra es el cellspacing // style="border-collapse:collapse" para quitar el borde-->
+            <caption>Título de la tabla</caption><!--título tabla-->
+            <thead>
+                <tr height="50"><!---height es para la altura-->
+                    <th bgcolor="#82e3ff">Nombre</th><!--columna o celda-->
+                    <th style="border-width: 10px; border-bottom-color: #86bf00; border-left-color: #86bfd1; border-right-color: #060602; border-top-color: #c65c02;">Edad</th>
+                    <th width="200">Ciudad</th><!--width es para poner más anchura / la cantidad que deseamos en todos los ámbitos se puede poner por px (que es lo que te detecta por defecto) o % (en este caso el problema es que con porcentaje se va adaptando al tamaño de la ventana en la pantalla (si la ponemos más chica, esta se verá modificada), con px si es FIJA esa anchura)-->
+                </tr>
+            </thead>
+            <tbody><!--necesario, del thead y tfoot podemos prescindir-->
+                <tr><!--fila-->
+                    <td>Alberto</td><!--columna o celda-->
+                    <td>22</td>
+                    <td>Toledo</td>
+                </tr>
+                <tr><!--fila-->
+                    <td>Luis</td><!--columna o celda-->
+                    <td>25</td>
+                    <td>Lugo</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" align="center">Grupo Studium</td><!--colspan combina columnas-->
+                </tr>
+            </tfoot>
+        </table>
+        <a href="https://www.diferenciador.com/evolucion-de-la-tecnologia/" target="_blank"> <!--con el target te abre el link en otra pestaña-->
+        <p align="center"> <!--no recomendable, es super chapucero, se hace con CSS-->
+        <img src="./Imágenes/principal.jpg" alt="Imagen futurista" title="La tecnología evoluciona" width="200" height="150"/>
+        </p>
+        </a>
+        <hr>
+        <img align="left" src="./Imágenes/principal.jpg" alt="Imagen futurista" title="La tecnología evoluciona" width="200" height="150"/> <!--fuerzas así a poner el texto seguido de la imagen poniéndole el align a la izq por ser una etiqueta de bloque-->
+        <p>Llévame al fichero <a class="tachado" href="./contacto.html">Contacto</a></p>
+        <p>Volvemos al <a href="#Inicio">inicio de la página</a></p> <!--nos vamos al inicio de la página debido a que al primer h1 le he puesto un id y al poner # y el nombre del id me lo detecta-->
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--Ejercicio de clase-->
+        <div id="ejemplouno">
+            <h1>Primero</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div id="ejemplodos">
+            <h1>Segundo</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div id="ejemplotres">
+            <h1>Tercero</h1>
+            <img id="imgdesierto" src="./Imágenes/desierto.jpg">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <br>
+        <br>
+    
+    </body>
+</html>

@@ -1,0 +1,84 @@
+/*debemos enlazarlo en nuestro html en la cabecera para que aparezcan los estilos deseados que queramos aplicar*/
+/*si ya tenemos en alguna etiqueta de nuestro html un atributo style, SE SOLAPAN y antepone la que más cerca de la etiqueta está (es decir, la que se encuentra en el fichero html*/
+
+h1, h2{ /*podría poner más etiquetas con una "," entre ellas si en cuyo caso quisiera el mismo estilo*/
+    color:#f00;
+    text-decoration: underline;
+}
+
+a{
+    color:blueviolet;
+    text-decoration: none;
+}
+
+a.tachado{ /*class*/ /*para especificar un estilo en una etiqueta concreta y no te lo coja en todas las etiquetas que se llamen a*/ /*si ponemos .tachado a TODAS las etiquetas con esa clase, se aplicaría*/
+    text-decoration: line-through;
+}
+
+p#tercero{ /*id se pone a UNA ETIQUETA SOLO, sino utilizamos class si lo queremos en más etiquetas, ya que como su propio nombre indica identifica a un elemento concreto*/ /*si ponemos #tercero a TODAS las etiquetas con esa clase, se aplicaría*/
+    font-size: 25px;
+    font-weight: bold; /*te lo pone en negrita*/
+}
+
+*{ /*se aplica a todo el documento*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3[class]{ /*selector de atributos: class, id... no importa que valor tenga class, solo necesitamos que aparezca el atributo para que formatee el texto*/
+    font-size: 50px;
+}
+
+/*selectores descendentes: ej para las etiquetas <ol> si le ponemos estilo nos cogería tb todos los <li>, entonces para que eso no sucede usamos estos selectores*/
+ol{
+    background-color: aquamarine;
+}
+
+ul li{ /*elementos ANIDADOS, separados sin comas*/
+    background-color: darkgrey;
+}
+
+ul li ul li{
+    background-color: darkorchid;
+}
+
+.borde{
+    border-radius: 10pt;
+}
+
+/*Ejercicio de clase*/
+div#ejemplouno{ /*el h1 sale subrayado y rojo debido a que está cogido para todo el texto*/
+    background-color: burlywood;
+    margin: 15px 30px 40px 20px; /*espacio exterior*/
+    float: right; /*rompe los elementos en bloque y conseguimos con ello ponerlos en línea*/
+    width: 300px;
+}
+
+div#ejemplodos{
+    background-color: cornflowerblue;
+    padding: 15px 30px 40px 20px; /*espacio interior*/
+    float: left;
+    width: 300px;
+
+}
+
+div#ejemplotres{
+    background-color:dimgray;
+    border: 5px;
+    border-style: solid;
+    float: left;
+    width: 300px;
+}
+
+#imgdesierto{
+    width: 200px;
+    float: left;
+    margin: 5px;
+}
+
+
+
+/*si en el html le quiero poner más de un atributo a la clase las pondría de la siguiente manera: class="verde negrita" van separadas simplemente por un espacio, no x comas*/
+/*font-size: tamaño de la fuente*/
+/*text-indent: para tabular la primera línea del párrafo, valor en px o en %*/
+/*text-transform: para poner la primera letra de cada palabra en mayús o en minús*/
+/*border-radius: se puede aplicar a todas las esquinas o especificarle que borde quieres modificar (podría poner 10pt 40pt 50pt 20pt para ir borde por borde o poniendo border-top-left-radius: , border-bottom-rigth-radius , ...), se especifica en pt*/

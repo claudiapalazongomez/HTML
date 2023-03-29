@@ -1,0 +1,52 @@
+nav{
+    margin: 50px;
+    width: 1000px;
+    height: 40px;
+}
+
+ul{
+    list-style: none;
+    width: 1000px;
+    height: 40px;
+}
+
+li{
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+div.contenedor_general:hover{
+    margin-top: -40px;
+}
+
+div.contenedor_general{
+    width: 200px;
+    height: 80px;
+    background-color: black;
+    -webkit-transition: margin-top .2s;
+}
+
+div.contenedor_uno{
+    width: 200px;
+    height: 36px;
+    background-color: black;
+    border-bottom: 4px solid #f8296b;
+    overflow: hidden;
+}
+
+div.contenedor_dos{
+    width: 200px;
+    height: 36px;
+    background-color: #f8296b;
+    overflow: hidden;
+}
+
+p{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+

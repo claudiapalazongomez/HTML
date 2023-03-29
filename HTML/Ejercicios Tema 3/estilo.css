@@ -1,0 +1,132 @@
+/*Ejercicio 2*/
+h1.ejercicio2{
+    color: chartreuse;
+    background-color: rosybrown;
+}
+
+/*Ejercicio 5*/
+h1.ej5{
+    color: red;
+}
+
+p.ej5{
+    color: blue;
+}
+
+/*Ejercicio 6*/
+h1.ej6{
+    font-style: italic;
+    color: green;
+}
+
+p.ej6{
+    font-style: italic;
+    color: red;
+}
+
+/*Ejercicio 7*/
+.numero{
+    color: pink;
+}
+
+/*Ejercicio 8*/
+h1.ej8{
+    color: green;
+}
+
+.sangria{
+    text-align: justify;
+}
+
+span.uno{
+    color: red;
+}
+
+span.dos{
+    color: orange;
+}
+
+h2.ej8{
+    color: blue;
+}
+
+span.tres{
+    color: red;
+    text-decoration-line: underline;
+}
+
+span.cuatro{
+    color: blue;
+    font-style: italic;
+}
+
+span.cinco{
+    color: blueviolet;
+}
+
+caption.titulo{
+    color: blue;
+}
+
+table{
+    border-collapse: collapse;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.amarillo{
+    color: yellow;
+}
+
+.verde{
+    color: green;
+}
+
+.naranja{
+    color: orange;
+}
+
+.marron{
+    color: brown;
+}
+
+.italic{
+    font-style: italic;
+}
+
+/*Ejercicio 9*/
+a#normal:visited{
+    color: red;
+}
+
+a#visitado:visited{
+    color: grey;
+}
+
+a#fondo:hover{
+    background-color: #CC0000;
+    color: white;
+}
+
+/*Ejercicio 10*/
+.margenes{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.tamanio{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.green{
+    background-color: #6FFF00;
+}
+
+.acuario{
+    margin-left: 20px;
+    background-color: #00FFDA;
+    color: white;
+}
+
+/*Ejercicio 11*/
